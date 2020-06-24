@@ -28,6 +28,9 @@
     border: 1px solid rgba(38, 0, 255, 0);
 
     }
+    h3{
+      font-family:Times new roman;
+    }
 
   </style>
   <title> User Upload Page</title>
@@ -46,7 +49,7 @@
     {% csrf_token %}
     Request id:<br>
 
-    <select name="requestno" id="requestno">
+    <select style="font-family:Times new roman;" name="requestno" id="requestno">
 
     {% for element in msg %}
 
