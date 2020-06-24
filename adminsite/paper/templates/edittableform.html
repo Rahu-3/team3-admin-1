@@ -17,6 +17,13 @@
     padding: 25px 50px 75px;
     background-color:lightcyan;
     }
+      h2
+    {
+      font-family:Times new roman;
+    }
+input {
+  font-family:times new roman;
+    }
 
  </style>
 
@@ -26,12 +33,12 @@
   {% if message %}<h4 class="text-center">{{message}}</h4>{% endif %}
   <br>
     <font face = "Bedrock" size = "3">
-     <h2> TIME-TABLE UPLOAD</h2>
+      <h2> <i>TIME-TABLE UPLOAD</i></h2>
   <form method="post" action="{% url 'paper:timetable' %}">
 
     {% csrf_token %}
       branch_name:<br>
-      <select name="branch_name" id="branch_name">
+      <select style="font-family:Verdana;" name="branch_name" id="branch_name">
       <option value="CSE">CSE</option>
       <option value="IT">IT</option>
       <option value="MECH">MECH</option>
@@ -51,13 +58,13 @@
       <input type="number" name="s_code">
       <br>
     exam_type:<br>
-      <select name="exam_type" id="exam_type">
+      <select style="font-family:Verdana;" name="exam_type" id="exam_type">
       <option value="internal">Internal</option>
       <option value="external">External</option>
     </select>
       <br>
     sub_type:<br>
-      <select name="sub_type" id="sub_type">
+      <selectstyle="font-family:Verdana;"name="sub_type" id="sub_type">
       <option value="mid1">Mid-1</option>
       <option value="Mid2">Mid-2</option>
       <option value="Main">Main</option>
@@ -77,7 +84,7 @@
       <input type="number" name="d_id">
       <br>
     sem_no:<br>
-     <select name="sem_no" id="sem_no">
+     <select style="color:blue;"name="sem_no" id="sem_no">
       <option value="1">1</option>
       <option value="2">2</option>
       <option value="3">3</option>
