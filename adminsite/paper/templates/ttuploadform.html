@@ -36,8 +36,8 @@ input {
   <form method="post" action="{% url 'paper:timetable' %}">
 
     {% csrf_token %}
-      branch_name:<br>
-      <select style="font-family:Times new roman;"name="branch_name" id="branch_name">
+      Branch_name:
+      <select style="font-family:Verdana;"name="branch_name" id="branch_name">
       <option value="CSE">CSE</option>
       <option value="IT">IT</option>
       <option value="MECH">MECH</option>
@@ -49,40 +49,40 @@ input {
      <option value="CIVIL">CIVIL</option>
     </select>
 
-     <br>
-     subject_name:<br>
+     <br><br>
+     Subject_name:
       <input type="text" name="subject_name">
-    <br>
-     subject_code:<br>
+    <br><br>
+     Subject_code:
       <input type="number" name="s_code">
-      <br>
-    exam_type:<br>
-      <selectstyle="font-family:Times new roman;" name="exam_type" id="exam_type">
+      <br><br>
+    Exam_type:
+      <select style="font-family:Verdana;" name="exam_type" id="exam_type">
       <option value="internal">Internal</option>
       <option value="external">External</option>
     </select>
-      <br>
-    sub_type:<br>
+      <br><br>
+    Sub_type:
       <select style="font-family:Times new roman;"name="sub_type" id="sub_type">
       <option value="mid1">Mid-1</option>
       <option value="Mid2">Mid-2</option>
       <option value="Main">Main</option>
       <option value="Backlog">Backlog</option>
     </select>
-      <br>
-    start_at:<br>
+      <br><br>
+    Start_at:
       <input type="time" name="start_time">
-      <br>
-    end_at:<br>
+      <br><br>
+    End_at:
       <input type="time" name="end_at">
-      <br>
-    date:<br>
+      <br><br>
+    Date:
       <input type="date" name="date">
-      <br>
-    year:<br>
+      <br><br>
+    Year:
       <input type="number" name="d_id">
-      <br>
-    sem_no:<br>
+      <br><br>
+    Sem_no:
      <select style="color:blue;"name="sem_no" id="sem_no">
       <option value="1">1</option>
       <option value="2">2</option>
